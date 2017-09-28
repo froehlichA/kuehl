@@ -16,5 +16,20 @@
     "sanitize-html": "^1.14.1",
     "socket.io": "^2.0.3",
     "xss": "^0.3.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/froehlichA/kuehl.git"
+  },
+  "keywords": [
+    "chat",
+    "kuehl",
+    "htbla",
+    "kaindorf"
+  ],
+  "bugs": {
+    "url": "https://github.com/froehlichA/kuehl/issues"
+  },
+  "homepage": "https://github.com/froehlichA/kuehl#readme"
 }
