@@ -12,7 +12,7 @@ joinRoom();
   Registers the username on the server, sets output streams, configures input.
 */
 function joinRoom() {
-  askQuestion('Username', 'Please input your username', function askUsername(name) {
+  askQuestion('Username', 'Please input your username in the input field below.', function askUsername(name) {
     socket.emit('initUserInRoom', name, getRoom(), setupRoom);
   });
 }
@@ -46,19 +46,17 @@ function askQuestion(name, question, cb) {
   symbol.innerHTML = name;
   var widthPrev = input.style.width;
   input.style.width = '80%';
-  var roomPrev = room.innerHTML;
+  var roomPrev = `-- You are currently in room ${getRoom()}.`;
   room.innerHTML = question;
   input.addEventListener('keyup', function question(event) {
     if (event.keyCode == 13 && input.value != "") {
       input.removeEventListener('keyup', question);
-      event.preventDefault();
-      event.stopPropagation();
       var msg = input.value;
-      cb(msg);
       room.innerHTML = roomPrev;
       symbol.innerHTML = symbolPrev;
       input.style.width = widthPrev;
       input.value = '';
+      cb(msg);
     }
   })
 }
