@@ -3,7 +3,7 @@ var room = document.getElementById('room');
 var symbol = document.getElementById('symbol');
 var iframe = document.getElementById('iframe');
 var input = document.getElementById('input');
-var socket = io.connect('http://localhost:3000', { secure: true });
+var socket = io.connect('https://kuehlchat.herokuapp.com');
 
 joinRoom();
 
