@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.15.5",
     "handlebars": "^4.0.10",
+    "log": "^1.4.0",
     "request": "^2.83.0",
     "sanitize-html": "^1.14.1",
     "socket.io": "^2.0.3",
