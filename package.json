@@ -1,0 +1,20 @@
+{
+  "name": "kuehl",
+  "version": "1.0.0",
+  "description": "A kuehl chat.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "froehlichA",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.5",
+    "handlebars": "^4.0.10",
+    "request": "^2.83.0",
+    "sanitize-html": "^1.14.1",
+    "socket.io": "^2.0.3",
+    "xss": "^0.3.4"
+  }
+}

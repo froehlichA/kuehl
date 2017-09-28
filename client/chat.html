@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kühl Chat</title>
+  <link rel="stylesheet" href="/static/chat.css">
+</head>
+
+<body>
+  <div class="left">
+    <div class="output" id="output">
+      <p>Kühl Chat Beta Free [V 0.3.204]</p>
+      <p>(c) Provided by Unmenschlichkeit</p>
+      <p id="room"></p>
+    </div>
+    <div class="inputDiv">
+      <span id="symbol">$</span> <input type="text" class="input" id="input" />
+    </div>
+  </div>
+  <div class="right">
+    <div class="frame">
+      <iframe class="iframe" src="https://duckduckgo.com" id="iframe"></iframe>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+  <script src="/static/chat.js"></script>
+</body>
+
+</html>
